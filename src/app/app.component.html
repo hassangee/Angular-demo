@@ -1,0 +1,9 @@
+<h1>Hi, Hassan, this is me Hussain</h1>
+<h4>{{title}}</h4>
+<div>
+  <input type="text" [(ngModel)]="searchText"> <!-- Fixed the inconsistent spelling -->
+</div>
+<h4>{{searchText}}</h4>
+<div *ngFor="let item of [2, 4, 6, 8, 10]">
+  <h2 >Data Are as {{item}}</h2>
+</div>
