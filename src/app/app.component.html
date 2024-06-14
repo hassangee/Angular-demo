@@ -1,9 +1,17 @@
 <h1>Hi, Hassan, this is me Hussain</h1>
 <h4>{{title}}</h4>
 <div>
-  <input type="text" [(ngModel)]="searchText"> 
-git status</div>
+  <input type="text" [(ngModel)]="searchText">
+</div>
 <h4>{{searchText}}</h4>
 <div *ngFor="let item of [2, 4, 6, 8, 10]">
-  <h2 >Data Are as {{item}}</h2>
+  <h2>Data Are as {{item}}</h2>
 </div>
+
+<div *ngFor="let data of array"  [ngStyle]="{'color': 'green'}">
+  <li>
+    {{data.name}}
+    {{data.id}}
+  </li>
+</div>
+<app-child (notify)="onNotify($event)"></app-child>
